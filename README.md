@@ -12,7 +12,7 @@ To use Azure AD B2C, you'll first need to create an Azure AD B2C tenant, registe
 
 * To create an Azure AD B2C tenant, checkout [these steps](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-get-started).
 
-* To register your app, checkout [these steps](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-app-registration).  Make sure the "Native Client" switch is turned to "Yes".  You will need to supply a Redirect URL with a custom scheme in order for your iOS application to capture the callback.  To avoid a collision with another applcation, we recommend using a reverse DNS notation of your B2C tenant name followed by your application name as the custom scheme.  The example Redirect URI in this sample is: "com.onmicrosoft.fabrikamb2c.exampleapp:/oauthredirect" where fabrikamb2c should be replaced with your tenant name, and exampleapp should be replaced with the name of your application.
+* To register your app, checkout [these steps](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-app-registration).  Make sure the "Native Client" switch is turned to "Yes".  You will need to supply a Redirect URL with a custom scheme in order for your iOS application to capture the callback.  To avoid a collision with another application, we recommend using a reverse DNS notation of your B2C tenant name followed by your application name as the custom scheme.  The example Redirect URI in this sample is: "com.onmicrosoft.fabrikamb2c.exampleapp:/oauthredirect" where fabrikamb2c should be replaced with your tenant name, and exampleapp should be replaced with the name of your application.
 
 * Define your [custom sign in and sign up experience](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-policies).  In Azure AD B2C, you define the experience your end users will encounter by creating policies.  For this sample, you'll want to create a single combined Sign In/Sign up policy.
 
@@ -22,19 +22,15 @@ To use Azure AD B2C, you'll first need to create an Azure AD B2C tenant, registe
 
 1. In Finder, double click on active-directory-ios-native-appauth-b2c.xcworkspace.  This will open the project in XCode.
 
-**The app is already preconfigured to a demo Azure B2C tenant. At this point, you should be able to build and run the app. Follow the instructions below to configure the app with your own tenant information.**
+    **The app is already preconfigured to a demo Azure B2C tenant. At this point, you should be able to build and run the app. Follow the instructions below to configure the app with your own tenant information.**
 
 2. Open `ViewController.m`, replace the following fields:
 
-> * `kTenantName`: This is the name of your Azure AD B2C tenant
-> 
-> * `kClientId`: This is your Application ID, which can be found in the Azure Portal (under Application settings).
-> 
-> * `kRedirectUri`: This is your redirect URI, which can be found in the Azure Portal (under Application settings).
-> 
-> * `kSignupOrSigninPolicy`: This is the name of your Sign Up or Sign In policy.
-> 
-> * `kEditProfilePolicy`: This is the name of your Sign Up or Sign In policy.
+    * `kTenantName`: This is the name of your Azure AD B2C tenant
+    * `kClientId`: This is your Application ID, which can be found in the Azure Portal (under Application settings).
+    * `kRedirectUri`: This is your redirect URI, which can be found in the Azure Portal (under Application settings).
+    * `kSignupOrSigninPolicy`: This is the name of your Sign Up or Sign In policy.
+    * `kEditProfilePolicy`: This is the name of your Sign Up or Sign In policy.
 
 3. Open Info.pList.  Expand 'URL types' -> 'Item 0' -> 'URL Schemes' -> 'Item 0'.  Update the scheme 'com.onmicrosoft.fabrikamb2c.exampleapp' to match the scheme of the kRedirectUri value updated in ViewController.m.
 
