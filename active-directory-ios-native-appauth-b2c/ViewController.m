@@ -13,11 +13,9 @@
 // Update the following for your AAD B2C tenant
 static NSString *const kTenantName = @"fabrikamb2c.onmicrosoft.com";
 static NSString *const kSignupOrSigninPolicy = @"b2c_1_susi";
-static NSString *const kEditProfilePolicy = @"b2c_1_reset";
+static NSString *const kEditProfilePolicy = @"b2c_1_edit";
 static NSString *const kClientId = @"90c0fe63-bcf2-44d5-8fb7-b8bbc0b29dc6";
-//static NSString *const kRedirectUri = @"com.onmicrosoft.fabrikamb2c.exampleapp:/oauthredirect";
-// uncomment the line above and delete the line below when fabrikamb2c is updated with a custom scheme redirect url
-static NSString *const kRedirectUri = @"https://login.microsoftonline.com/tfp/oauth2/nativeclient";
+static NSString *const kRedirectUri = @"com.onmicrosoft.fabrikamb2c.exampleapp://oauth/redirect";
 
 // DO NOT CHANGE - This is the format of OIDC Token and Authorization enpoints for AAD B2C
 static NSString *const kEndpoint = @"https://login.microsoftonline.com/te/%1$@/%2$@/oauth2/v2.0/%3$@";
