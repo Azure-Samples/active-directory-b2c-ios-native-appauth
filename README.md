@@ -30,7 +30,7 @@ To use Azure AD B2C, you'll first need to create an Azure AD B2C tenant, registe
     * `kClientId`: This is your Application ID, which can be found in the Azure Portal (under Application settings).
     * `kRedirectUri`: This is your redirect URI, which can be found in the Azure Portal (under Application settings).
     * `kSignupOrSigninPolicy`: This is the name of your Sign Up or Sign In policy.
-    * `kEditProfilePolicy`: This is the name of your Sign Up or Sign In policy.
+    * `kEditProfilePolicy`: This is the name of your Edit Profile policy.
 
 3. Open Info.pList.  Expand 'URL types' -> 'Item 0' -> 'URL Schemes' -> 'Item 0'.  Update the scheme 'com.onmicrosoft.fabrikamb2c.exampleapp' to match the scheme of the kRedirectUri value updated in ViewController.m.
 
