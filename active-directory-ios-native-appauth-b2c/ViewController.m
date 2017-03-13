@@ -13,7 +13,7 @@
 // Update the following for your AAD B2C tenant
 static NSString *const kTenantName = @"fabrikamb2c.onmicrosoft.com";
 static NSString *const kSignupOrSigninPolicy = @"b2c_1_susi";
-static NSString *const kEditProfilePolicy = @"b2c_1_edit";
+static NSString *const kEditProfilePolicy = @"b2c_1_edit_profile";
 static NSString *const kClientId = @"90c0fe63-bcf2-44d5-8fb7-b8bbc0b29dc6";
 static NSString *const kRedirectUri = @"com.onmicrosoft.fabrikamb2c.exampleapp://oauth/redirect";
 
