@@ -46,7 +46,7 @@ static NSString *const kEndpoint = @"https://login.microsoftonline.com/te/%1$@/%
     appDelegate.currentAuthorizationFlow = [OIDAuthState authStateByPresentingAuthorizationRequest:request presentingViewController:self callback:^(OIDAuthState *_Nullable authState, NSError *_Nullable error) {
         
         if (authState) {
-            NSLog(@"Got authorization tokens. Access token: %@", authState.lastTokenResponse.accessToken);
+            NSLog(@"Got ID token: %@", authState.lastTokenResponse.idToken);
             _signInButton.enabled = NO;
             _editProfileButton.enabled = YES;
             [self setAuthState:authState];
