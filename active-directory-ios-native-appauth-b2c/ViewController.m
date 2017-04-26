@@ -17,7 +17,7 @@ static NSString *const kEditProfilePolicy = @"b2c_1_edit_profile";
 static NSString *const kClientId = @"90c0fe63-bcf2-44d5-8fb7-b8bbc0b29dc6";
 static NSString *const kRedirectUri = @"com.onmicrosoft.fabrikamb2c.exampleapp://oauth/redirect";
 
-// DO NOT CHANGE - This is the format of OIDC Token and Authorization enpoints for AAD B2C
+// DO NOT CHANGE - This is the format of OIDC Token and Authorization endpoints for Azure AD B2C
 static NSString *const kEndpoint = @"https://login.microsoftonline.com/te/%1$@/%2$@/oauth2/v2.0/%3$@";
 
 @interface ViewController ()
