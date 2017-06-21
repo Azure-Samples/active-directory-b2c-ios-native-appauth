@@ -1,7 +1,7 @@
 ---
 services: active-directory-b2c
 platforms: ios
-author: SaeedAkhter-MSFT
+author: brandwe
 ---
 
 # Integrate Azure AD B2C into an Objective-C iOS application
