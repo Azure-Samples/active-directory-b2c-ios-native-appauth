@@ -1,7 +1,12 @@
 ---
-services: active-directory-b2c
-platforms: ios
-author: brandwe
+languages:
+- objc
+page_type: sample
+description: "This sample demonstrates how to use Azure AD B2C using a 3rd party library called AppAuth."
+products:
+- azure
+- azure-active-directory
+urlFragment: integrate-azure-ad-b2c-ios-objc
 ---
 
 # Integrate Azure AD B2C into an Objective-C iOS application
