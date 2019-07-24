@@ -21,7 +21,7 @@ This sample was created by following the README instructions from the [iOS AppAu
 
 To use Azure AD B2C, you'll first need to create an Azure AD B2C tenant, register your application, and create some sign in and sign up experiences.
 
-* To create an Azure AD B2C tenant, checkout [these steps](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-get-started).
+* To create an Azure AD B2C tenant, checkout [these steps](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-get-started).
 
 * To register your app, checkout [these steps](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-app-registration).  Make sure the "Native Client" switch is turned to "Yes".  You will need to supply a Redirect URL with a custom scheme in order for your iOS application to capture the callback.  To avoid a collision with another application, we recommend using a reverse DNS notation of your B2C tenant name followed by your application name as the custom scheme.  The example Redirect URI in this sample is: `com.onmicrosoft.fabrikamb2c.exampleapp://oauth/redirect` where fabrikamb2c should be replaced with your tenant name, and exampleapp should be replaced with the name of your application.
 
